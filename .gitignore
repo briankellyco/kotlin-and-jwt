@@ -1,0 +1,24 @@
+### IntelliJ ###
+build/
+out/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+### Gradle ###
+build/
+.gradle
+.gradle/4.2.1
+
+### Maven ###
+target/
+
+### Dev ###
+local.properties
+
+### macOS ###
+*.DS_Store
+
+### Misc ###
+*.log

@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "f65fbc34-c096-4937-aa84-f983cb3fc9aa",
+		"name": "kotlin-and-jwt/tokens-simply",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /api/auth/generatetoken - ldap-standard-schema.ldif = BOB",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"bob\", \"password\": \"bobspassword\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/generatetoken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"generatetoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/auth/generatetoken - ldap-custom-schema.ldif = test_admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"test_admin\", \"password\": \"test_pw\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/generatetoken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"generatetoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/auth/secured/with/http/security",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{bearerToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/auth/secured/with/http/security",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"secured",
+						"with",
+						"http",
+						"security"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4e298192-8ba4-4197-a068-5a265715c4b7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b9019199-1672-4aca-b0de-bfcd4b125d5b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
