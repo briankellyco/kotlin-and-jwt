@@ -6,8 +6,7 @@ Create a Spring Security Principal from a JWT token using Kotlin.
 
 ## What is the use case for this microservice?
 
-A customer had no Java or Kotlin developers and I was asked to extend the security mechanism of an existing Spring Boot application. I needed
-to avoid any network/firewall issues with their LDAP server and choose to create a POC with an embedded server.
+A customer had no Java or Kotlin developers and I was asked to extend the security mechanism of an existing Spring Boot application. 
 
 The proof of concept (POC) was required to prove:
 
@@ -15,7 +14,9 @@ The proof of concept (POC) was required to prove:
 2.  And that JWT tokens can be authenticated in the spring security filter chain (in an existing Spring Boot application) without having 
     to drop the existing UsernamePassword authentication mechanism.
 
-This microservice demonstrates part (1) and for ease of testing is integrated with a test LDAP server. The LDAP server contains user accounts and assigned role privileges.
+This microservice demonstrates part (1) and for ease of testing is integrated with a test LDAP server. 
+
+The LDAP server contains user accounts and assigned role privileges.
 
 ## Run the application
 1.  Checkout the github repo, import into your IDE and run using Java 11.
