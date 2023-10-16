@@ -22,7 +22,7 @@ This proof of concept (POC) application:
 1. Demonstrates how to manually issue JWT tokens via an API endpoint.
 2. And demonstrates how to authenticate those JWT tokens in the Spring Security filter chain.
 
-An additional task required for the production system was to create a Custom security filter that would authenticate both 
+An additional task required by the production system, was to create a Custom security filter that would authenticate both 
 the manually created JWT token as well as the OAuth issued JWT token. This functionality is not present in the POC but feel free to reach out
 if you need help with this.
 
