@@ -50,7 +50,7 @@ Spring boot project init:
     https://start.spring.io/
 Choosing:
     Spring 2.5.5
-    Java 11
+    Kotlin 1.5.31
 ```
 
 ## Author
