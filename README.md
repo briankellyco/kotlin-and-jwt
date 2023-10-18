@@ -12,8 +12,8 @@ an internal facing service with no public internet access.
 The requirements were:
 
 1. Remove Spring Form based security.
-2. Add security that can authenticate the JWT tokens issued by the built-in Authorization server (a pre-existing OAuth integration used across the organisation).
-3. Add security that can authenticate JWT tokens that have been manually issued by the application via an API endpoint. The purpose of this requirement was to provide 
+2. Add security that can authenticate a JWT token issued by the built-in Authorization server (a pre-existing OAuth integration used across the organisation).
+3. Add security that can authenticate a JWT token that has been manually issued by the application via an API endpoint. The purpose of this requirement was to provide 
    a fallback solution if the customer decided to switch off their existing OAuth integration. 
 
 
